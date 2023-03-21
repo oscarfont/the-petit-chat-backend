@@ -6,6 +6,7 @@ plugins:
   - serverless-plugin-typescript
   - serverless-stack-output
   - serverless-offline
+  - serverless-dotenv-plugin
 
 provider:
   name: aws

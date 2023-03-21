@@ -24,6 +24,7 @@ class HttpClient implements httpClient {
     config?: AxiosRequestConfig
   ): Promise<T> {
     const response = await this.axiosInstance.post<T>(url, data, config);
+    console.log(response);
     return response.data;
   }
 

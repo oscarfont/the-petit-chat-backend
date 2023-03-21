@@ -9,6 +9,10 @@
 		"lib": ["es2015"],
 		"rootDir": "./",
 		"noImplicitAny": true,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+        "types":[
+            "@types/aws-lambda",
+            "@types/node",
+        ]
 	}
 }
