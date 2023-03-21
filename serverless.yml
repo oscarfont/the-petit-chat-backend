@@ -1,14 +1,15 @@
 # For full config options, check the docs:
 #    docs.serverless.com
-service: serverless-template 
+service: serverless-template
 
 plugins:
   - serverless-plugin-typescript
   - serverless-stack-output
+  - serverless-offline
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs16.x
   stage: ${opt:stage, 'dev'}
   region: eu-west-1
 
@@ -16,17 +17,6 @@ custom:
   stage: ${opt:stage, 'dev'}
   output:
     file: .serverless/output.json
-
-resources:
-  Outputs:
-    ApiUrl:
-      Description: "The API Gateway URL"
-      Value:
-        Fn::Join:
-          - ""
-          - - "https://"
-            - Ref: ApiGatewayRestApi
-            - ".execute-api.${self:provider.region}.amazonaws.com/${self:provider.stage}"
 
 functions:
   healthcheck:
