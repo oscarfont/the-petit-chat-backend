@@ -10,12 +10,12 @@ plugins:
 provider:
   name: aws
   runtime: nodejs16.x
-  stage: ${opt:stage, 'dev'}
+  stage: ${opt:stage, 'api'}
   region: eu-south-2
 
 custom:
-  stage: ${opt:stage, 'dev'}
   output:
+    stage: ${opt:stage, 'api'}
     file: .serverless/output.json
 
 functions:
@@ -26,3 +26,10 @@ functions:
       - http:
           path: healthcheck
           method: get
+  generate:
+    handler: src/functions/generate.generate
+    description: Function to call return chat completions of the Petit Chat
+    events:
+      - http:
+          path: /generate
+          method: post
