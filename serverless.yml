@@ -34,3 +34,4 @@ functions:
       - http:
           path: /generate
           method: post
+          cors: true
