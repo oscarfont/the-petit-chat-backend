@@ -12,7 +12,7 @@
   },
   "author": "Óscar Font",
   "dependencies": {
-    "typescript": "^3.5.3"
+    "typescript": "^3.9.4"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
