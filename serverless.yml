@@ -35,3 +35,4 @@ functions:
           path: /generate
           method: post
           cors: true
+          timeout: 30
