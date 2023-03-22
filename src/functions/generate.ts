@@ -7,6 +7,7 @@ export const generate = middy(async (event: any, context: any) => {
   const response = {
     body: {},
     statusCode: 200,
+    headers: { "Access-Control-Allow-Origin": "*" },
   };
   try {
     const { message } = event?.body;
