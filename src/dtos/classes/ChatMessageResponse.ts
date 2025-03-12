@@ -1,22 +1,22 @@
-import { chatMessageResponse } from "../interfaces/chatMessageResponse";
-import { openAIAPIResponse } from "../interfaces/openAPIResponse";
+import { IChatMessageResponse } from '../interfaces/IChatMessageResponse';
+import { IOpenAPIResponse } from '../interfaces/IOpenAPIResponse';
 
-class ChatMessageResponse implements chatMessageResponse {
-  id: string = "";
-  model: string = "";
-  message: string = "";
-  contentLength: number = 0;
+class ChatMessageResponse implements IChatMessageResponse {
+  public id: string = '';
+  public model: string = '';
+  public message: string = '';
+  public contentLength: number = 0;
 
-  constructor(data?: chatMessageResponse) {
-    if (data) Object.assign(this, data);
+  constructor(data?: IChatMessageResponse) {
+    if (data) { Object.assign(this, data); }
   }
 
-  fromOpenAPIResponse(response: openAIAPIResponse) {
+  public fromOpenAPIResponse(response: IOpenAPIResponse) {
     this.id = response.id;
     this.model = response.model;
     this.message = response.choices[0].message.content
       ? response.choices[0].message.content
-      : "";
+      : '';
     this.contentLength = response.choices[0].message.content?.length
       ? response.choices[0].message.content?.length
       : 0;

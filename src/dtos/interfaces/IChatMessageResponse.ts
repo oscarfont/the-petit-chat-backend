@@ -1,4 +1,4 @@
-export interface chatMessageResponse {
+export interface IChatMessageResponse {
   id: string;
   model: string;
   message: string;

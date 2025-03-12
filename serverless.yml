@@ -10,7 +10,7 @@ plugins:
 
 provider:
   name: aws
-  runtime: nodejs16.x
+  runtime: nodejs18.x
   stage: ${opt:stage, 'api'}
   region: eu-south-2
 
@@ -29,6 +29,7 @@ functions:
           method: get
   generate:
     handler: src/functions/generate.generate
+    timeout: 10
     description: Function to call return chat completions of the Petit Chat
     events:
       - http:

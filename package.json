@@ -3,31 +3,34 @@
   "version": "1.0",
   "description": "This typescript backend application is meant to feed the The Petit Chat application",
   "scripts": {
+    "lint": "tslint --project tsconfig.json --config tslint.json",
     "test": "jest",
     "remove": "sls remove",
     "deploy": "sls deploy",
     "deploy:prod": "sls deploy --stage production",
-    "offline": "sls offline"
+    "offline": "sls offline --httpPort 3001"
   },
   "author": "Óscar Font",
   "dependencies": {
-    "typescript": "^4.7.0",
     "@middy/core": "^4.2.7",
     "@middy/http-error-handler": "^4.2.7",
     "@middy/http-json-body-parser": "^4.2.7",
-    "axios": "^0.19.0"
+    "@types/jest": "^29.5.14",
+    "axios": "^1.8.3",
+    "ollama": "^0.5.14",
+    "serverless": "^3.4.0",
+    "typescript": "^4.7.0"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.114",
     "@types/axios": "^0.14.0",
-    "@types/jest": "^24.9.1",
     "dotenv": "^16.0.3",
-    "jest": "^24.8.0",
+    "jest": "^29.7.0",
     "serverless-dotenv-plugin": "^6.0.0",
-    "serverless-offline": "^12.0.4",
-    "serverless-plugin-typescript": "^1.1.7",
+    "serverless-offline": "^14.4.0",
+    "serverless-plugin-typescript": "^2.1.5",
     "serverless-stack-output": "^0.2.3",
-    "ts-jest": "^24.0.2",
+    "ts-jest": "^29.2.6",
     "tslint": "^5.18.0",
     "type-fest": "^3.6.1"
   }

@@ -1,16 +1,15 @@
-import HttpClient from "./adapters/http/HttpClient";
-import ChatMessageResponse from "./dtos/classes/ChatMessageResponse";
-import OpenAIClient from "./openai/OpenAIClient";
+import ChatMessageResponse from './dtos/classes/ChatMessageResponse';
+import OllamaClient from './infrastructure/OllamaClient';
 
 export const generateCompletions = async (
-  message: string
+  message: string,
 ): Promise<ChatMessageResponse> => {
-  const httpClient = new HttpClient();
-  const openAIClient = new OpenAIClient(httpClient);
+  // const httpClient = new HttpClient();
+  // const openAIClient = new OpenAIClient(httpClient);
+  const ollamaClient = new OllamaClient();
 
   try {
-    const response = await openAIClient.generate(message);
-    return response;
+    return await ollamaClient.generate(message);
   } catch (e) {
     throw e;
   }

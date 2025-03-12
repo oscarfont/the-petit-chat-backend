@@ -1,7 +1,7 @@
-import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
-import { httpClient } from "./httpClientInterface";
+import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
+import { IHttpClient } from './IHttpClient';
 
-class HttpClient implements httpClient {
+class HttpClient implements IHttpClient {
   private readonly axiosInstance: AxiosInstance;
 
   constructor(instance?: AxiosInstance) {
@@ -21,7 +21,7 @@ class HttpClient implements httpClient {
   public async post<T = any>(
     url: string,
     data?: any,
-    config?: AxiosRequestConfig
+    config?: AxiosRequestConfig,
   ): Promise<T> {
     const response = await this.axiosInstance.post<T>(url, data, config);
     console.log(response);

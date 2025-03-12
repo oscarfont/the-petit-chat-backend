@@ -13,6 +13,7 @@
         "types":[
             "@types/aws-lambda",
             "@types/node",
+			"@types/jest"
         ]
 	}
 }
