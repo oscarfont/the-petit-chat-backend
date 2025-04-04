@@ -1,4 +1,4 @@
-import { AxiosInstance, AxiosRequestConfig } from 'axios';
+import { AxiosInstance } from 'axios';
 import ChatMessageResponse from '../../src/dtos/classes/ChatMessageResponse';
 import HttpClient from '../../src/infrastructure/http/HttpClient';
 import OpenAIClient from '../../src/infrastructure/OpenAIClient';
