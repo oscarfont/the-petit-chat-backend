@@ -6,4 +6,6 @@ jspm_packages
 .serverless
 .build
 
-.env
+api-gateway/.env.local
+api-gateway/.env.production
+package-lock.json

@@ -1,0 +1,17 @@
+Sunotel Hoteles
+    Descubre la oferta de Sunotel Hoteles en Barcelona, con 4 establecimientos estratégicamente ubicados para que
+    puedas disfrutar de todo lo que la ciudad tiene para ofrecer. Ya sea para un viaje de negocios, unas vacaciones
+    en familia o una escapada romántica, Sunotel tiene lo que necesitas.
+
+    Hoteles disponibles en Barcelona:
+        Sunotel Central
+            Disfruta de una excelente ubicación en el centro de Barcelona. Ideal para explorar la ciudad.
+
+        Sunotel Club
+            Perfecto para quienes buscan comodidad y una ubicación céntrica en Barcelona.
+
+        Sunotel Aston
+            Un hotel moderno con una oferta completa de servicios para tu comodidad.
+
+        Sunotel Junior
+            Un hotel ideal para estancias más cortas con todas las comodidades de un hotel de calidad.

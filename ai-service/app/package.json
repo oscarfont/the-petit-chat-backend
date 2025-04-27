@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "nodemon -e py,yml --exec \"serverless offline start --host 0.0.0.0\""
+  },
+  "dependencies": {
+    "serverless": "^3.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "serverless-offline": "^14.4.0",
+    "serverless-python-requirements": "^6.1.2"
+  }
+}

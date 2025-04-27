@@ -1,0 +1,4 @@
+Contacto:
+    Teléfono: +34 91 800 49 94
+    Email: reservas@hotelatelier.com
+    Dirección: Paseo de la Castellana 143, 28046 Madrid, España

@@ -1,0 +1,46 @@
+# For full config options, check the docs:
+#    docs.serverless.com
+service: the-petit-chat-backend
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-stack-output
+  - serverless-offline
+  - serverless-dotenv-plugin
+  - serverless-offline-watcher
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: ${opt:stage, 'api'}
+  region: eu-south-2
+
+custom:
+  serverless-offline:
+    httpPort: 4000
+  serverless-offline-watcher:
+    - path:
+        - src/**/**
+      command:
+        - "echo received $WATCHER_EVENT_TYPE event for $WATCHER_EVENT_PATH"
+  output:
+    stage: ${opt:stage, 'api'}
+    file: .serverless/output.json
+
+functions:
+  healthcheck:
+    handler: src/functions/healthcheck.healthcheck
+    description: Healthcheck to ensure the service is up
+    events:
+      - http:
+          path: healthcheck
+          method: get
+  generate:
+    handler: src/functions/generate.generate
+    timeout: 10
+    description: Function to call return chat completions of the Petit Chat
+    events:
+      - http:
+          path: /generate
+          method: post
+          cors: true

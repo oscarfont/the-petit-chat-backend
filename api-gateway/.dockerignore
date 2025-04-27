@@ -1,0 +1,9 @@
+__pycache__/
+node_modules/
+.venv/
+.git/
+.env/
+.build/
+.serverless/
+*.log
+*.pyc
