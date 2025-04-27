@@ -8,14 +8,9 @@ export interface IOpenAPIResponse {
 }
 
 export interface IChoice {
-  message: IDelta;
+  text: string;
   finish_reason: null | string;
   index: number;
-}
-
-export interface IDelta {
-  role: string;
-  content: string;
 }
 
 export interface ITokensUsage {

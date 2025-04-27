@@ -14,12 +14,10 @@ class ChatMessageResponse implements IChatMessageResponse {
   public fromOpenAPIResponse(response: IOpenAPIResponse) {
     this.id = response.id;
     this.model = response.model;
-    this.message = response.choices[0].message.content
-      ? response.choices[0].message.content
+    this.message = response.choices[0].text
+      ? response.choices[0].text
       : '';
-    this.contentLength = response.choices[0].message.content?.length
-      ? response.choices[0].message.content?.length
-      : 0;
+    this.contentLength = response.usage.total_tokens
   }
 }
 

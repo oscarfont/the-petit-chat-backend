@@ -17,7 +17,7 @@ describe('OpenAIClient tests', () => {
     openAiClient = new OpenAIClient(httpClient);
   });
 
-  test('Check API_KEY is added successfully from .env variables', () => {
+  test('Check API_KEY is added successfully from .env.local variables', () => {
     expect(openAiClient.apiKeyIsNotEmpty()).toBeTruthy();
   });
 

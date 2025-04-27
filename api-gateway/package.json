@@ -8,7 +8,7 @@
     "remove": "sls remove",
     "deploy": "sls deploy",
     "deploy:prod": "sls deploy --stage production",
-    "offline": "sls offline --httpPort 3001"
+    "doctor": "sls doctor"
   },
   "author": "Óscar Font",
   "dependencies": {
@@ -28,10 +28,12 @@
     "jest": "^29.7.0",
     "serverless-dotenv-plugin": "^6.0.0",
     "serverless-offline": "^14.4.0",
+    "serverless-offline-watcher": "^1.1.0",
     "serverless-plugin-typescript": "^2.1.5",
     "serverless-stack-output": "^0.2.3",
     "ts-jest": "^29.2.6",
     "tslint": "^5.18.0",
-    "type-fest": "^3.6.1"
+    "type-fest": "^3.6.1",
+    "velocityjs": "^1.1.0"
   }
 }
