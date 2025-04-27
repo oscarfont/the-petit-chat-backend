@@ -1,0 +1,44 @@
+ICON Hoteles
+    Explora nuestra selección exclusiva de ICON Hoteles en las ciudades más vibrantes de España y Oporto.
+    Cada uno de nuestros hoteles ICON ofrece un concepto único de lujo y sofisticación, pensados para viajeros
+    que buscan una experiencia diferente y especial. Si te atrae la idea de disfrutar de un diseño exclusivo y
+    ubicaciones privilegiadas, los hoteles ICON son para ti.
+
+    Destinos disponibles:
+        Madrid: Chamberí, Gran Vía, Retiro, Serrano, Puerta del Sol, Arturo Soria/Aeropuerto.
+        Barcelona: Eixample Derecho, Gótico.
+        Málaga: Centro, Santa Cruz, Puente Triana.
+        Valencia: Ruzafa, Ciutat Vella.
+        Sevilla: Centro, Santa Cruz.
+        Bilbao: Getxo, Casco Viejo.
+        Palma de Mallorca: Playa de Palma, El Arenal.
+        Oporto: Ribeira.
+
+    Hoteles ICON destacados:
+        ICON Duplo Ribeira - Oporto
+            Desayuno gratuito.
+            Un hotel con encanto situado en el corazón de Oporto.
+
+        ICON BCN - Barcelona
+            Desayuno gratuito.
+            Disfruta de un hotel de lujo en el distrito más moderno de Barcelona.
+
+        ICON Valparaiso - Mallorca
+            Desayuno gratuito.
+            Experimenta el lujo con vistas al mar en Palma de Mallorca.
+
+        ICON Malabar - Málaga
+            Desayuno gratuito.
+            Diseño contemporáneo y ubicación inmejorable para explorar Málaga.
+
+        ICON Roseto - Mallorca
+            Desayuno gratuito.
+            Un hotel moderno y elegante para disfrutar de la tranquilidad de la isla.
+
+        ICON Embassy - Madrid
+            Desayuno gratuito.
+            Situado en el centro de Madrid, ideal para explorar la ciudad.
+
+        ICON Wipton - Madrid
+            Desayuno gratuito.
+            Un hotel boutique con un diseño único, perfecto para estancias de lujo.

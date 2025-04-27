@@ -1,0 +1,15 @@
+[flake8]
+extend-ignore = E203
+exclude =
+    .git,
+    __pycache__,
+    knowledge-base,
+    model,
+    Dockerfile,
+    requirements.txt,
+    app/node_modules,
+    package.json,
+    package-lock.json,
+    serverless.yml
+max-complexity = 10
+max-line-length = 128
