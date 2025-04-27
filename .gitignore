@@ -7,4 +7,5 @@ jspm_packages
 .build
 
 api-gateway/.env.local
+api-gateway/.env.production
 package-lock.json
