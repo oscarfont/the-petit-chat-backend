@@ -14,6 +14,10 @@ provider:
   runtime: nodejs18.x
   stage: ${opt:stage, 'api'}
   region: eu-south-2
+  timeout: 420
+
+build:
+  esbuild: false
 
 custom:
   serverless-offline:
@@ -37,7 +41,7 @@ functions:
           method: get
   generate:
     handler: src/functions/generate.generate
-    timeout: 10
+    timeout: 30
     description: Function to call return chat completions of the Petit Chat
     events:
       - http:
