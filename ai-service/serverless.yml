@@ -1,12 +1,24 @@
 service: ai-service
 
+package:
+  artifact: ./ai-service.zip
+
 provider:
   name: aws
-  runtime: python3.8
+  runtime: python3.12
+  region: eu-south-2
+  architecture: x86_64
+  memorySize: 8192
+  timeout: 420
+  environment:
+    LD_LIBRARY_PATH: $LD_LIBRARY_PATH:/var/task/lib64
+    LLAMA_CPP_LIB_PATH: /var/task/lib64
+    HF_HOME: /tmp
 
 functions:
   api:
     handler: handler.chat_completions
+    ephemeralStorageSize: 2048
     events:
       - http:
           path: chat/completions
