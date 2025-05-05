@@ -50,10 +50,9 @@ class LlmModel:
         self.name = name
         self.messages = self.convert_to_llama_messages(messages)
         self.temperature = temperature
-        self.llm = Llama(
-            model_path=self.resolve_path_given_model_name(name),
-            ctx_length=ctx_length,
-            chat_format="llama-2",
+        self.llm = Llama.from_pretrained(
+            repo_id="bartowski/FastLlama-3.2-1B-Instruct-GGUF",
+            filename="FastLlama-3.2-1B-Instruct-Q4_0.gguf"
         )
 
     def llama_messages_to_prompt(self, prompt: str, context: str, user_query: str) -> str:

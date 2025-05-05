@@ -1,5 +1,4 @@
-scikit-learn
-sentence_transformers
-nltk
+huggingface-hub
+boto3
 pydantic
 flake8
