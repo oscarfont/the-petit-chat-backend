@@ -25,6 +25,7 @@ class LocalLlmClient implements IAgentClient {
                 headers: {
                     'Content-Type': 'application/json',
                 },
+                timeout: 420000,
             };
             const body = {
                 model: 'FastLlama',
