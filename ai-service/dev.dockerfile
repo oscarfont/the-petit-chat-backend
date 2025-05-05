@@ -18,11 +18,11 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 COPY ./app ./app
-COPY ./app/package.json ./app/package.json
-COPY ./model ./model
-COPY ./knowledge-base ./knowledge-base
+COPY package.json ./app/package.json
+COPY model ./model
+COPY app/knowledge-base ./knowledge-base
 COPY requirements.txt .
-COPY app/serverless.yml .
+COPY serverless.yml .
 
 RUN pip install llama-cpp-python --config-settings cmake.args="-DGGML_CCACHE=OFF -DCMAKE_CXX_STANDARD=17 -DGGML_BLAS=ON;-DGGML_BLAS_VENDOR=OpenBLAS" \
     && pip install --no-cache-dir -r ./requirements.txt
