@@ -9,4 +9,5 @@ chmod -R 777 output
 mv /home/ofont/Proyectos/petit-chat/the-petit-chat-backend/ai-service/output/ai-service.zip /home/ofont/Proyectos/petit-chat/the-petit-chat-backend/ai-service/ai-service.zip
 rm -r output
 
-zip -r ./ai-service.zip ./app -x "/app/*__pycache__/*"
+cd /home/ofont/Proyectos/petit-chat/the-petit-chat-backend/ai-service/app && \
+  zip -r /home/ofont/Proyectos/petit-chat/the-petit-chat-backend/ai-service/ai-service.zip . -x "*__pycache__/*"
