@@ -8,8 +8,10 @@ exclude =
     Dockerfile,
     requirements.txt,
     app/node_modules,
+    node_modules
     package.json,
     package-lock.json,
-    serverless.yml
+    serverless.yml,
+    untitled
 max-complexity = 10
 max-line-length = 128

@@ -3,6 +3,7 @@ from parameterized import parameterized
 from app.chat_completions_request import ChatCompletionsRequest, ChatCompletionMessage
 from pydantic import ValidationError
 
+
 class TestChatCompletionsRequest(unittest.TestCase):
 
     def test_valid_request(self):
@@ -64,6 +65,7 @@ class TestChatCompletionsRequest(unittest.TestCase):
         with self.assertRaises(ValidationError) as context:
             ChatCompletionMessage(role='unknow', content='Something')
         self.assertIn("Input should be 'system', 'user' or 'assistant'", str(context.exception))
+
 
 if __name__ == '__main__':
     unittest.main()

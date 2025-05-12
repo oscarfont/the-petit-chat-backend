@@ -3,6 +3,7 @@ from app import handler
 import json
 from pydantic import ValidationError
 
+
 class TestHandlerIntegration(unittest.TestCase):
 
     def test_successful_chat_completion_integration(self):
@@ -33,6 +34,7 @@ class TestHandlerIntegration(unittest.TestCase):
 
         with self.assertRaises(ValidationError):
             handler.chat_completions(mock_event, mock_context)
+
 
 if __name__ == '__main__':
     unittest.main()

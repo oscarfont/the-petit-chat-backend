@@ -16,7 +16,6 @@ class ModelName(Enum):
             return None
 
 
-
 class MessageRole(Enum):
     SYSTEM = 1
     USER = 2
