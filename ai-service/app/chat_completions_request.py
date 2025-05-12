@@ -8,7 +8,7 @@ class ChatCompletionMessage(BaseModel):
 
 
 class ChatCompletionsRequest(BaseModel):
-    model: Literal['FastLlama', 'Qwen']
+    model: Literal['FastLlama']
     messages: List[ChatCompletionMessage]
     temperature: PositiveFloat
 
