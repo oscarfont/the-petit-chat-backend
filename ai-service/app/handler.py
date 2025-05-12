@@ -1,5 +1,5 @@
-from ChatCompletionsRequest import ChatCompletionsRequest
-from LlmModel import LlmModel, ModelName
+from app.chat_completions_request import ChatCompletionsRequest
+from app.llm_model import LlmModel, ModelName
 import json
 
 

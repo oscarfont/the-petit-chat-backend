@@ -1,0 +1,6 @@
+llama-cpp-python -C cmake.args="-DGGML_CCACHE=OFF -DGGML_BLAS=ON -DGGML_BLAS_VENDOR=OpenBLAS FORCE_CMAKE=1"
+huggingface-hub
+pydantic
+flake8
+parameterized
+coverage
