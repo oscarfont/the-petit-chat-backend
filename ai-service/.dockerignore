@@ -1,0 +1,11 @@
+__pycache__/
+/app/__pycache__/
+/app/node_modules
+/app/.serverless/
+/.serverless
+.build/
+.venv/
+.git/
+*.log
+*.pyc
+.env

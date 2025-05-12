@@ -1,6 +1,10 @@
+# IDE files
+*/.idea/*
+
 # package directories
 node_modules
 jspm_packages
+untitled
 
 # Serverless directories
 .serverless
@@ -9,3 +13,8 @@ jspm_packages
 api-gateway/.env.local
 api-gateway/.env.production
 package-lock.json
+
+# files
+*.iml
+*.zip
+ai-service/.coverage
